@@ -11,8 +11,9 @@
 body {
     color: #fff;
     background-color: var(--black);
-
+overflow: hidden;
     line-height: 1.5;
+
 }
 
 * {
@@ -20,10 +21,14 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+}
 
+html {
+    overflow-x: hidden;
 }
 
 .navbar {
+    
 
     position: relative;
     top: 0;
@@ -137,6 +142,7 @@ body {
     background-color: var(--green);
 
 }
+
 
 
 ul.nav-list.active li {
@@ -344,7 +350,7 @@ ul.nav-list.active li {
     margin: 0px auto;
     background-color: var(--black);
     font-family: var(--sans);
-
+overflow: hidden;
     margin: 0 auto;
     position: relative;
 }
@@ -1052,6 +1058,12 @@ Tablets Ipads portrait mode max-width:1024px.
 
 
 @media (max-width: 840px) {
+    .nav-container {
+            overflow-x: hidden;
+    
+    
+    
+        }
     .nav-container ul.nav-list {
         position: absolute;
         background-color: var(--nero);
@@ -1063,9 +1075,9 @@ Tablets Ipads portrait mode max-width:1024px.
         top: 4rem;
         justify-content: center;
         align-items: center;
-        transform: translatex(120%);
+        transform: translatex(100%);
         transition: transform 1s ease;
-        z-index: -1;
+        overflow: hidden;
     }
 
     .nav-container ul.nav-list li {
@@ -1082,7 +1094,7 @@ Tablets Ipads portrait mode max-width:1024px.
 
     .nav-container ul.nav-list.active {
         transform: translatex(0%);
-        z-index: -1;
+    
     }
 
 
