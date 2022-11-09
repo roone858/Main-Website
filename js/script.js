@@ -1,3 +1,4 @@
+/*
 let firstname = document.getElementById("firstname");
 let lastname = document.getElementById("lastname");
 let email = document.getElementById("email");
@@ -62,4 +63,4 @@ function isInputsEmpty() {
 rate.addEventListener("click",function(){
 
    document.querySelector("label").innerText=`${rate.value} / 5`
-})
+}) */

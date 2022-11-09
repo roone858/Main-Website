@@ -11,7 +11,7 @@
 body {
     color: #fff;
     background-color: var(--black);
-overflow: hidden;
+    overflow: hidden;
     line-height: 1.5;
 
 }
@@ -28,7 +28,7 @@ html {
 }
 
 .navbar {
-    
+
 
     position: relative;
     top: 0;
@@ -274,7 +274,7 @@ ul.nav-list.active li {
 }
 
 .home.container .row-right img {
-    width: 60%;
+
     transition: var(--transition);
     position: relative;
 }
@@ -350,7 +350,7 @@ ul.nav-list.active li {
     margin: 0px auto;
     background-color: var(--black);
     font-family: var(--sans);
-overflow: hidden;
+
     margin: 0 auto;
     position: relative;
 }
@@ -446,14 +446,23 @@ overflow: hidden;
 }
 
 
-/*reivews oage start ==============================*/
-.review-container {
-    width: 80%;
+/*resume oage start ==============================*/
+.resume-container {
+    width: 100%;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 10px;
+    column-gap: 20px;
+    }
+    
+    .res {
+        flex: calc((100% /2) - 4rem);
+        position: relative;
+        margin: 1rem;
+        padding: 1rem;
+        border-left: #252525 solid 2px;
+        transition: 0.3s;
 }
 
 .head-text {
@@ -461,100 +470,27 @@ overflow: hidden;
     color: #d0d0d0;
 }
 
-.review-container input {
-    width: calc(50% - 5px);
-    margin: 10px 0;
-    background: var(--nero);
-    border: 2px solid transparent;
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-    border-radius: 25px;
-    outline: 0;
-    caret-color: #fff;
-    font-family: var(--sans);
-}
-
-.review-container label {
-    padding: 1.3rem 1rem;
-}
-
-.review-container label::after {
-    content: "";
-    display: inline-block;
-    background: url("../star-rate.png") no-repeat;
-
-    background-size: contain;
-    height: 25px;
-    width: 25px;
-    margin-left: 10px;
-    margin-top: -5px;
-
-}
-
-.review-container input:focus {
-    border-color: var(--green);
-}
-
-.review-container textarea {
-    width: 100%;
-    margin: 1rem 0;
-    background: var(--nero);
-    border: 2px solid transparent;
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-    border-radius: 25px;
-    outline: 0;
-    caret-color: #fff;
-    text-transform: uppercase;
-    font-family: var(--sans);
-}
-
-.review-container textarea:focus {
-    border-color: var(--green);
-}
-
-.review-container button {
-    width: 100%;
-    margin: 1rem 0;
-    background: var(--green);
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-    border-radius: 25px;
-    cursor: pointer;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: var(--sans);
-    border: #111;
-
-}
-
-.result-container .rev {
-    position: relative;
-    border: GOLD 1px solid;
-    padding: 2rem;
-    background-color: var(--nero);
-    margin: 20PX;
-    border-radius: 10PX;
-
-}
-
-.result-container .rev span {
-    background-color: var(--black);
-    color: white;
-    border-radius: 10px;
-
-}
-
-.result-container .rev span:after {
-    content: "";
-    display: inline-block;
+.res i {
+    font-size: 30px;
     position: absolute;
-    background: url("../star-rate.png") no-repeat;
-    background-size: contain;
-    height: 25px;
-    width: 25px;
-    margin-left: 5px;
+    top: 0;
+    transform: translate(-100%, -50%);
+    z-index: 99;
+    color: #ed0e0e;
+}
 
+.res h3 {
+    font-size: 20px;
+}
+
+.res span {
+    font-size: 12px;
+    color: #d0d0d0;
+}
+
+.res p {
+    font-size: 16px;
+    color: #d0d0d0;
 }
 
 
@@ -1059,11 +995,9 @@ Tablets Ipads portrait mode max-width:1024px.
 
 @media (max-width: 840px) {
     .nav-container {
-            overflow-x: hidden;
-    
-    
-    
+        overflow-x: hidden;
         }
+
     .nav-container ul.nav-list {
         position: absolute;
         background-color: var(--nero);
@@ -1094,7 +1028,7 @@ Tablets Ipads portrait mode max-width:1024px.
 
     .nav-container ul.nav-list.active {
         transform: translatex(0%);
-    
+
     }
 
 
@@ -1130,7 +1064,7 @@ Tablets Ipads portrait mode max-width:1024px.
 
 @media (max-width:700px) {
 
-    .review-container {
+    .resume-container {
         width: 100%
     }
 
@@ -1138,7 +1072,7 @@ Tablets Ipads portrait mode max-width:1024px.
 
 @media (max-width: 480px) {
 
-    .review-container input {
+    .resume-container input {
         width: calc(100% - 5px);
     }
 
