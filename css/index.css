@@ -443,6 +443,12 @@ ul.nav-list.active li {
     color: #fff;
     border: #111 solid 2px;
     font-family: var(--poppins);
+    cursor: pointer;
+        transition: var(--transition);
+    }
+    
+    .about button:hover {
+        transform: var(--transform);
 }
 
 
@@ -491,6 +497,9 @@ ul.nav-list.active li {
 .res p {
     font-size: 16px;
     color: #d0d0d0;
+}
+.resume-container a {
+    cursor: pointer;
 }
 
 
