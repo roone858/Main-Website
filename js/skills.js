@@ -1,4 +1,4 @@
-let skillstitle = ["css", "html", "Bootstrap", "React.js", "Node.js", "express", "python", "js", Typescript,Postgres,MongoDB,"cpp", "java"];
+let skillstitle = ["css", "html", "Bootstrap", "React.js", "Node.js", "express", "python", "js", "Typescript","Postgres",""MongoDB,"cpp", "java"];
 let skillsValue = [80, 90, 80, 70, 60, 50, 90, 80, 80,90,70,20, 40];
 
 
