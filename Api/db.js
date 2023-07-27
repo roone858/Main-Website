@@ -9,14 +9,15 @@ var pool = new Pool();
 // and the node-pool (https://github.com/coopernurse/node-pool) constructor
 // allowing you to fully configure the behavior of both
 const client = new Pool({
-  database: "portfolio",
-  user: "postgres",
-  password: "1234",
+  database: "portfolio_mxw2",
+  user: "user",
+  host: "dpg-cj1dgd15rnuhn3m8ubl0-a.oregon-postgres.render.com",
+  password: "4dfTFIaIGYdfNOabEZZw74yxHwXl4AxJ",
   port: 5432,
-  //   ssl: true,
-  //   max: 20, // set pool max size to 20
-  //   idleTimeoutMillis: 1000, // close idle clients after 1 second
-  //   connectionTimeoutMillis: 1000, // return an error after 1 second if connection could not be established
-  //   maxUses: 7500, // close (and replace) a connection after it has been used 7500 times (see below for discussion)
+    ssl: true,
+    max: 20, // set pool max size to 20
+    idleTimeoutMillis: 10000, // close idle clients after 1 second
+    connectionTimeoutMillis: 10000, // return an error after 1 second if connection could not be established
+    maxUses: 7500, // close (and replace) a connection after it has been used 7500 times (see below for discussion)
 });
 module.exports={client}
