@@ -11,7 +11,7 @@ sendBTN.addEventListener("click", () => {
     subject: subject.value,
     message: message.value,
   };
-  fetch("http://localhost:3000/messages", {
+  fetch("https://main-website-server.onrender.com/messages", {
     method: "POST",
     mode: "cors",
     cache: "no-cache",
