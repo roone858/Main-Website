@@ -777,7 +777,7 @@ ul.nav-list.active li {
     font-family: var(--sans);
 }
 
-.contact .row .row-right button {
+.contact .row .row-right input[type="submit"]  {
     width: 100%;
     margin: 1rem 0;
     background: var(--green);
@@ -790,7 +790,12 @@ ul.nav-list.active li {
     color: #fff;
     border: #111 solid 2px;
 }
+.contact .row .row-right input[type="submit"]:hover{
+    background: var(--black);
+    border: var(--green) solid 2px;
 
+
+}
 /* end contact page */
 .footer-container {
     position: relative;

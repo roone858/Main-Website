@@ -104,15 +104,26 @@
         </div>
         <div class="row-right">
           <div class="input-group">
-            <input type="text" placeholder="Your Name" />
-            <input type="text" placeholder="Your email" />
-            <input type="text" placeholder="Your subject" />
+            <input id="name" type="text" placeholder="Your Name" />
+            <input id="email" type="text" placeholder="Your Email" />
+            <input id="subject" type="text" placeholder="Your Subject" />
           </div>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button>SEND MASSAGE</button>
+          <textarea name="" id="message" cols="30" rows="10"></textarea>
+          <input type="submit" value="SEND MASSAGE" id="submit" />
+          <div
+            class="float-message"
+            id="float-message"
+            style="border: green 2px solid;  border-radius: 15px;padding: 1rem; display: none;"
+          >
+            <p >
+              Thank you for letting us know. I'm here to help, and I'll respond
+              as soon as I can. Have a great day
+            </p>
+          </div>
         </div>
       </div>
     </section>
+
     <!-- start footer -->
     <footer class="footer-container">
       <div class="cols">
@@ -156,6 +167,7 @@
     <p class="created">created by : ROONEY</p>
     <!-- end footer -->
     <script src="js/toggle.js"></script>
+    <script src="js/sendMessage.js"></script>
 
     <script
       src="https://kit.fontawesome.com/3ea8533edd.js"
